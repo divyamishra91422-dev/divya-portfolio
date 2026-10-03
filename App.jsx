@@ -1,11 +1,7 @@
-import { useState } from "react";
 import "./App.css";
 
 function App() {
-  // Load previously saved image when the website opens
-  const [profileImage, setProfileImage] = useState(() => {
-    return localStorage.getItem("profileImage") || "";
-  });
+  const profileImage = "/divya-mishra.jpg";
 
   return (
     <div className="portfolio">
@@ -88,20 +84,10 @@ function App() {
 
           <div className="hero-photo">
 
-            {profileImage ? (
-
-              <img
-                src={profileImage}
-                alt="Divya Mishra"
-              />
-
-            ) : (
-
-              <div className="photo-empty">
-                <span>YOUR PHOTO</span>
-              </div>
-
-            )}
+            <img
+              src={profileImage}
+              alt="Divya Mishra"
+            />
 
           </div>
 
@@ -138,20 +124,10 @@ function App() {
 
             <div className="photo-placeholder">
 
-              {profileImage ? (
-
-                <img
-                  src={profileImage}
-                  alt="Divya Mishra"
-                />
-
-              ) : (
-
-                <span>
-                  YOUR PHOTO
-                </span>
-
-              )}
+              <img
+                src={profileImage}
+                alt="Divya Mishra"
+              />
 
             </div>
 
