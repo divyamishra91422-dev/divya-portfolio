@@ -537,10 +537,6 @@ function App() {
 
             <div className="timeline-card">
 
-              <span className="timeline-date">
-                09/2025 – 05/2027
-              </span>
-
               <h3>
                 Master of Computer Applications
               </h3>
@@ -565,10 +561,6 @@ function App() {
             <div className="timeline-dot"></div>
 
             <div className="timeline-card">
-
-              <span className="timeline-date">
-                08/2021 – 05/2024
-              </span>
 
               <h3>
                 Bachelor of Computer Applications
