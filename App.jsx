@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  const profileImage = "/divya-mishra.jpg";
+  const profileImage = `${import.meta.env.BASE_URL}divya-mishra.jpg`;
 
   return (
     <div className="portfolio">
@@ -11,7 +11,7 @@ function App() {
       <nav className="navbar">
 
         <div className="logo">
-          DIVYA MISHRA
+          <span>&lt;</span>Divya<span className="logo-name">Mishra</span><span>/&gt;</span>
         </div>
 
         <div className="nav-links">
@@ -25,6 +25,10 @@ function App() {
           <a href="#contact">Contact</a>
         </div>
 
+        <a className="nav-resume" href="#experience">
+          <span aria-hidden="true">↓</span> Resume
+        </a>
+
       </nav>
 
 
@@ -34,18 +38,24 @@ function App() {
 
         <div className="hero-content">
 
+          <p className="availability"><span></span>Available for opportunities</p>
+
           <p className="hello">
-            HELLO, I'M
+            Hi there, I'm
           </p>
 
           <h1>
-            DIVYA
-            <span>MISHRA</span>
+            Divya <span>Mishra</span>
           </h1>
 
           <h2>
-            MCA Student • Aspiring Software Developer
+            Aspiring Software Developer
           </h2>
+
+          <p className="hero-description">
+            MCA student passionate about building modern web experiences with
+            JavaScript and React.
+          </p>
 
           <div className="tech-line">
             <span>JavaScript</span>
@@ -61,7 +71,7 @@ function App() {
               href="#projects"
               className="primary-button"
             >
-              View Projects
+              View My Work <span aria-hidden="true">→</span>
             </a>
 
             <a
@@ -75,23 +85,26 @@ function App() {
 
         </div>
 
-
-        {/* ================= HOME PHOTO ================= */}
-
-        <div className="hero-visual">
-
-          <div className="photo-glow"></div>
-
-          <div className="hero-photo">
-
-            <img
-              src={profileImage}
-              alt="Divya Mishra"
-            />
-
+        <div className="hero-decoration" aria-label="Code preview for Divya Mishra">
+          <div className="code-badge code-badge-javascript"><span>JS</span> JavaScript</div>
+          <div className="code-window">
+            <div className="code-window-header">
+              <div className="window-dots"><span></span><span></span><span></span></div>
+              <span>developer.js</span>
+            </div>
+            <pre aria-label="Developer profile code"><code>
+              <span className="code-purple">const</span> developer = {"{"}{"\n"}
+              {"  "}name: <span className="code-green">"Divya Mishra"</span>,{"\n"}
+              {"  "}role: <span className="code-green">"Aspiring Software Developer"</span>,{"\n"}
+              {"  "}education: <span className="code-green">"MCA"</span>,{"\n"}
+              {"  "}focus: <span className="code-orange">["JavaScript", "React"]</span>,{"\n"}
+              {"  "}goal: <span className="code-orange">"Building for the web"</span>{"\n"}
+              {"};"}{"\n\n"}
+              <span className="code-purple">developer</span>.buildPortfolio();<span className="code-cursor"></span>
+            </code></pre>
           </div>
-
-
+          <div className="code-badge code-badge-react"><span>⚛</span> React</div>
+          <div className="code-badge code-badge-web"><span>⌘</span> Web</div>
         </div>
 
       </section>

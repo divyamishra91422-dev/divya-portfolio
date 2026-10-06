@@ -29,6 +29,13 @@ The production site is generated in `dist/`.
 
 Add the resulting URL to your resume, LinkedIn profile, and GitHub profile after deployment.
 
+## Deploy with GitHub Pages
+
+The GitHub Actions workflow builds and deploys the site when changes are pushed to `main`.
+In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**.
+After the first successful workflow run, the site is available at:
+`https://divyamishra91422-dev.github.io/divya-portfolio/`
+
 ## Portfolio content
 
 Edit the text and sections in `App.jsx`; edit the design in `App.css` and `index.css`.
