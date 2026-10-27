@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  const profileImage = `${import.meta.env.BASE_URL}divya-mishra.jpg`;
+  const profileImage = `${import.meta.env.BASE_URL}divya-profile.png`;
 
   return (
     <div className="portfolio">
